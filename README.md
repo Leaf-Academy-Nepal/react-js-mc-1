@@ -1,13 +1,32 @@
-# To create react app
+1. JS in JSX
+2. Props
 
-- npx create-react-app day-two
+# Todo
 
-1. Setup a react-app
+1. Iteration over components
+2. Conditional Rendering
+3. State
+4. NPM Packages
+5. react-router and api calls
 
-2. React Components
+---
 
-3. JSX
+Appendix:
 
-4. Install Prettier
+const About = () => {
+return (
 
-5. Check "Format on Code" on settings and add Prettier as default formatter
+<section id="about" className="dark-bg">
+<div className="flex">
+<div className="flex-full">{showMyName("Sunil")}</div>
+<div className="flex-full">{showMyName("Anil")}</div>
+<div className="flex-full">{showMyName("Pratik")}</div>
+</div>
+</section>
+);
+};
+
+const showMyName = (myName) => {
+// const myName = "Sameer";
+return <p>Hi, I am {myName}</p>;
+};

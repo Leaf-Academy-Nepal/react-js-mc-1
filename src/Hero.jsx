@@ -12,7 +12,7 @@ const Hero = () => {
           Let's chat!
         </a>
       </div>
-      <img src="/human.webp" alt="sameer" />
+      <img src="/image.png" alt="sameer" />
     </div>
   );
 };
