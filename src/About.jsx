@@ -1,5 +1,15 @@
 import AboutCard from "./components/AboutCard";
 
+const response = {
+  clients: [
+    "/artisty.png",
+    "/directy.png",
+    "/khedma-lik.png",
+    "/telefy.png",
+    "/wallety.png",
+  ],
+};
+
 const About = () => {
   return (
     <section id="about" className="dark-bg">
@@ -42,6 +52,11 @@ const About = () => {
             innovative and constantly challenging my skills.
           </p>
         </div>
+      </div>
+      <div className="flex partners justify-space">
+        {response.clients.map((client) => (
+          <img height={45} width={180} src={"/clients" + client} alt={client} />
+        ))}
       </div>
     </section>
   );
